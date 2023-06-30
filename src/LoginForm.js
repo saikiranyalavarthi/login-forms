@@ -8,7 +8,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Perform API login request
+    
     try {
       const response = await fetch('/api/login', {
         method: 'POST',
@@ -19,7 +19,7 @@ const LoginForm = () => {
       if (response.ok) {
         // Login successful
         setError('');
-        // Do something with the login token or redirect to another page
+       
       } else {
         // Login failed
         const data = await response.json();
